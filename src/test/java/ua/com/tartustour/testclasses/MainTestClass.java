@@ -16,6 +16,7 @@ public class MainTestClass extends TestManager {
     LoginPage loginPage;
     ProfilePage profilePage;
 
+
         @Test
         public void testM() {
             mainPage=navigateMainPage();
@@ -25,6 +26,7 @@ public class MainTestClass extends TestManager {
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                System.out.println("Interrupted");
             }
 
         }
