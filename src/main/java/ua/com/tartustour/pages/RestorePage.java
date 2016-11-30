@@ -8,8 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by Administrator on 11/6/2016.
  */
-@Component
-@Lazy
+
 public class RestorePage extends LoginPage {
 
     @Autowired
@@ -18,12 +17,12 @@ public class RestorePage extends LoginPage {
     }
 
     @Override
-    public void isLoaded(){
+    protected void isLoaded(){
 
     }
 
     @Override
-    public void load(){
+    protected void load(){
 
     }
 }

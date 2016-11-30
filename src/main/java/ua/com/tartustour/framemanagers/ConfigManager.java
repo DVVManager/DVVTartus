@@ -19,7 +19,7 @@ public class ConfigManager {
         setProp();
         MAIN_URL=props.getProperty("main.url");
         BROWSER=props.getProperty("browser");
-        logger.info("MAIN URL : "+MAIN_URL+"BROWSER CHOSEN: "+BROWSER);
+        logger.info("MAIN URL : "+MAIN_URL+" :: BROWSER CHOSEN: "+BROWSER);
     }
 
     // ---------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ public class ConfigManager {
         try {
             props.load(ConfigManager.class.getClassLoader().getResourceAsStream("config.properties"));
         } catch (IOException e) {
-            logger.warn("Properties file was not found");
+            logger.warn("| Properties file was not found |");
         }
         logger.info("| Properties file is recongnized and data is sourced |");
     }

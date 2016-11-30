@@ -35,7 +35,7 @@ public class TestManager extends AbstractTestNGSpringContextTests {
 
     @AfterTest
     public void afterTest(){
-        logger.info("|Finishing execution of test class");
+        logger.info("|Finishing execution of test class |");
     }
     @AfterSuite
     public void afterSuite(){

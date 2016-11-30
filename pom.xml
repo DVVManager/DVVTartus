@@ -9,7 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.1.4.RELEASE</spring.version>
     </properties>
 
@@ -149,9 +150,6 @@
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
                 </includes>
-                <excludes>
-                    <exclude>**/*local.properties</exclude>
-                </excludes>
             </resource>
             <resource>
                 <directory>src/main/resources</directory>

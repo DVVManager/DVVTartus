@@ -13,8 +13,7 @@ import static org.testng.Assert.assertTrue;
 /**
  * Created by Administrator on 11/6/2016.
  */
-@Component
-@Lazy
+
 public class RegistrationPage extends LoginPage {
 
     @Autowired
@@ -22,7 +21,7 @@ public class RegistrationPage extends LoginPage {
         super(beanDriver);
     }
     @Override
-    public void isLoaded(){
+    protected void isLoaded(){
         assertTrue(webElementIsEnabled(emailField));
         assertTrue(webElementIsEnabled(nameField));
         assertTrue(webElementIsEnabled(surnameField));
@@ -32,7 +31,7 @@ public class RegistrationPage extends LoginPage {
     }
 
     @Override
-    public void load(){
+    protected void load(){
         refreshPage();
     }
 

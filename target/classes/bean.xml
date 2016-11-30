@@ -9,7 +9,7 @@
 
     <context:annotation-config/>
 
-    <context:component-scan base-package="ua.com.tartustour.pages,ua.com.tartustour.managers,
+    <context:component-scan base-package="ua.com.tartustour.pages,ua.com.tartustour.framemanagers,
     ua.com.tartustour.utils,ua.com.tartustour.testclasses"/>
 
     <!--<context:property-placeholder location="classpath:Data.properties" />-->

@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.stereotype.Component;
 import ua.com.tartustour.pages.locators.LoginPageConstants;
 
 import static org.testng.Assert.assertTrue;
@@ -13,8 +11,7 @@ import static org.testng.Assert.assertTrue;
 /**
  * Created by Administrator on 11/6/2016.
  */
-@Component
-@Lazy
+
 public class LoginPage extends AbstractPage<LoginPage>{
 
     @FindBy(xpath = LoginPageConstants.LOGIN_BUTTON)
@@ -38,22 +35,22 @@ public class LoginPage extends AbstractPage<LoginPage>{
     }
 
     @Override
-    public void isLoaded(){
+    protected void isLoaded(){
         assertTrue(webElementIsEnabled(loginButton));
         assertTrue(webElementIsEnabled(emailField));
         assertTrue(webElementIsEnabled(passField));
         assertTrue(webElementIsEnabled(registreLink));
     }
     @Override
-    public void load(){
+    protected void load(){
         refreshPage();
     }
 
     public void enterEmail(String email){
-        clearAndInputText(emailField, email);
+        clearAndType(emailField, email);
     }
     public void enterPass(String pass){
-        clearAndInputText(passField, pass);
+        clearAndType(passField, pass);
     }
 
     public void clickLogin(){
@@ -61,6 +58,9 @@ public class LoginPage extends AbstractPage<LoginPage>{
     }
     public void checkSaveCredentials(){
         click(remembePassCheckBox);
+    }
+    public boolean isCredentialsSaveBoxChecked(){
+        return remembePassCheckBox.isSelected();
     }
 
     public ProfilePage login(String email,String pass,boolean saveCredentials){

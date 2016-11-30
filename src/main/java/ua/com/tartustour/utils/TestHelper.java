@@ -1,5 +1,9 @@
 package ua.com.tartustour.utils;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * Created by Administrator on 11/6/2016.
  */
@@ -14,6 +18,24 @@ public class TestHelper {
             return null;
         }
         return result;
+    }
+
+    public static String getCurrentDate(String dateFormat){
+        Date now=new Date();
+        SimpleDateFormat formater=new SimpleDateFormat(dateFormat);
+        return formater.format(now);
+    }
+    public static String getDateInPastOrFuture(String dayMonthYear,int increment){
+        Date now=new Date();
+        Calendar date=Calendar.getInstance();
+        date.setTime(now);
+        switch(dayMonthYear){
+            case "day": date.add(Calendar.DATE, increment);break;
+            case "month":date.add(Calendar.MONTH,increment);break;
+            case "year":date.add(Calendar.YEAR,increment);break;
+            default:date.add(Calendar.DATE,increment);
+        }
+        return new SimpleDateFormat("dd-MM-yyyy").format(date.getTime());
     }
 
 }
