@@ -68,6 +68,6 @@ public class LoginPage extends AbstractPage<LoginPage>{
         enterPass(pass);
         if(saveCredentials)checkSaveCredentials();
         clickLogin();
-        return (ProfilePage) new ProfilePage(driver).get();
+        return  new ProfilePage(driver).get();
     }
 }

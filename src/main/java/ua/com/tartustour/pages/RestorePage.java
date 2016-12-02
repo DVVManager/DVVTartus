@@ -25,4 +25,8 @@ public class RestorePage extends LoginPage {
     protected void load(){
 
     }
+    @Override
+    public  RestorePage get(){
+        return (RestorePage) new LoginPage(driver).get();
+    }
 }

@@ -3,6 +3,7 @@ package ua.com.tartustour.utils;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Administrator on 11/6/2016.
@@ -36,6 +37,14 @@ public class TestHelper {
             default:date.add(Calendar.DATE,increment);
         }
         return new SimpleDateFormat("dd-MM-yyyy").format(date.getTime());
+    }
+
+    public static void waitSeconds(int seconds){
+        try {
+            TimeUnit.SECONDS.sleep(seconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

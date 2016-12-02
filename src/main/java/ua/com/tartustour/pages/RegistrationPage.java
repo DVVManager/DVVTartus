@@ -35,6 +35,11 @@ public class RegistrationPage extends LoginPage {
         refreshPage();
     }
 
+    @Override
+    public RegistrationPage get(){
+        return (RegistrationPage) new LoginPage(driver).get();
+    }
+
     @FindBy(xpath= RegistrationPageConstants.EMAIL_FIELD)
     WebElement emailField;
 

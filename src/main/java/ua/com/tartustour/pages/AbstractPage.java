@@ -4,12 +4,14 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
+import ua.com.tartustour.utils.TestHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,16 +25,15 @@ import java.util.concurrent.TimeUnit;
 public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableComponent<T> {
 
     protected static Logger logger = Logger.getLogger(AbstractPage.class);
-    protected static WebDriver driver;
+    protected WebDriver driver;//was static
     protected WebDriverWait wait;
 
-    @Autowired
     public AbstractPage(WebDriver beanDriver) {
         driver = beanDriver;
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, 15);
+        wait = new WebDriverWait(driver,5);
 
     }
 
@@ -42,7 +43,7 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
 
     }
 
-    public static void quiteAndCloseDriver() {
+    public  void quiteAndCloseDriver() { //was static
         driver.quit();
     }
 
@@ -52,6 +53,7 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
 
     protected void clearAndType(WebElement inputElement, String inputText) {
         inputElement.clear();
+        TestHelper.waitSeconds(1);
         inputElement.sendKeys(inputText);
 
     }
@@ -65,7 +67,19 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
     }
 
     protected void click(WebElement clickElement) {
+        wait.until(ExpectedConditions.elementToBeClickable(clickElement));
         clickElement.click();
+    }
+
+    protected void clickIfVisible(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        element.click();
+    }
+
+    protected void clickWithJS(WebElement element){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        executeJSCommand("arguments[0].click();", element);
+
     }
 
     protected boolean webElementIsEnabled(WebElement element) {
@@ -74,6 +88,16 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
 
     protected void waitElementToBeClickable(String xpath) {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+    }
+
+    protected void moveToElementAndClick(WebElement element){
+        Actions acts=new Actions(driver);
+        acts.moveToElement(element).click().build().perform();
+    }
+
+    protected void moveMouse(int horizont,int vertical){
+        Actions acts=new Actions(driver);
+        acts.moveByOffset(horizont, vertical).build().perform();
     }
 
     protected void navigatePageBack() {
@@ -89,7 +113,16 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
     }
 
     protected void submit(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         element.submit();
+    }
+
+    protected WebElement getElementBy(By by){
+        return driver.findElement(by);
+    }
+
+    protected List<WebElement> getElementsBy(By by){
+        return driver.findElements(by);
     }
 
     protected void cancelAlertPopUp() {
@@ -119,6 +152,11 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
     protected void executeJSCommand(String command) {
         JavascriptExecutor javascript = (JavascriptExecutor) driver;
         javascript.executeScript(command);
+    }
+
+    protected void executeJSCommand(String command,WebElement element) {
+        JavascriptExecutor javascript = (JavascriptExecutor) driver;
+        javascript.executeScript(command,element);
     }
 
     protected void selectDropDownElementByText(WebElement element, String text) {
@@ -168,7 +206,7 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
     protected int getElementsCount(By locator) {
         List<WebElement> elements=driver.findElements(locator);
         int size=elements.size();
-        return (size>0)?size+1:0;
+        return size;
     }
 
     protected WebElement getRandomFromWebElements(By locator){
@@ -193,6 +231,6 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
     }
 
     @Override
-    protected void isLoaded() throws Error {
+    protected void isLoaded() {
     }
 }

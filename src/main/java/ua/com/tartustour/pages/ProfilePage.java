@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 
 public class ProfilePage extends LoginPage {
 
-    @Autowired
     public ProfilePage(WebDriver beanDriver) {
         super(beanDriver);
     }
@@ -24,4 +23,10 @@ public class ProfilePage extends LoginPage {
     protected void load(){
         refreshPage();
     }
+
+    @Override
+    public ProfilePage get(){
+        return (ProfilePage) new LoginPage(driver).get();
+    }
+
 }

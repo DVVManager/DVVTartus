@@ -20,30 +20,27 @@ public class MainTestClass extends TestManager {
     MainPage.SearchForm searchForm;
     SearchResultPage resultPage;
 
-/*
-    @Test
-    public void login() {
-        mainPage = navigateMainPage();
-        loginPage = mainPage.goToLoginPage();
-        profilePage = loginPage.login("dvvmanager@gmail.com", "p110892dvv", false);
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            System.out.println("Interrupted");
-        }
-
-    }*/
-
     @Test
     public void goToCruiseDetails() {
         mainPage = navigateMainPage();
         searchForm=mainPage.new SearchForm();
-        //resultPage=searchForm.performSearch();
-        //resultPage.goToRandomCruiseDetails();
+        /*String yes=searchForm.setRandomAvailableRegion();
+        System.out.println("Chosen region/subregion: "+yes);
+        resultPage=searchForm.performSearch();
+        resultPage.goToRandomCruiseDetails();*/
+        //searchForm.chooseRiverCruise();
+        searchForm.setSpecifiedRegion("Европа");
+        searchForm.setSpecifiedSubRegion("Европа");
         searchForm.setStartDateFieldAsCurrent();
-        searchForm.setNextStartDateFieldCustomed("day",2);
-
+        searchForm.setNextStartDateFieldCustomed("day",15);
+        searchForm.openDetailsSearch();
+        searchForm.hideDetailedSearch();
+        searchForm.clearFilledData();
+        searchForm.chooseSeaCruise();
+        searchForm.goToSearchHistory();
+        searchForm.returnToSearchFromHistory();
+        searchForm.performSearch();
+        TestHelper.waitSeconds(4);
     }
 
 }

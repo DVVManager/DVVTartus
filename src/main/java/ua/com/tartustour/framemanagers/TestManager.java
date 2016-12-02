@@ -40,7 +40,8 @@ public class TestManager extends AbstractTestNGSpringContextTests {
     @AfterSuite
     public void afterSuite(){
         logger.info("| Going to finish TestSuite and close driver |");
-        AbstractPage.quiteAndCloseDriver();
+        //AbstractPage.quiteAndCloseDriver();
+        mainPage.quiteAndCloseDriver();
         System.exit(0);
     }
 

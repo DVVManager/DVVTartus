@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import ua.com.tartustour.utils.TestHelper;
 
 import static ua.com.tartustour.pages.locators.SearchResultPageConstants.*;
 
@@ -40,6 +41,11 @@ public class SearchResultPage extends MainPage {
         assertTrue(webElementIsEnabled(sortItemsList));
     }
 
+    @Override
+    public SearchResultPage get(){
+        return (SearchResultPage)super.get();
+    }
+
     public int getPageResultsCount(int page){
         //TODO: add logic to choose required page num
         return getElementsCount(By.xpath(RESULT_TABLE_RESULTS));
@@ -54,7 +60,9 @@ public class SearchResultPage extends MainPage {
     }
 
     public void goToRandomCruiseDetails(){
-        click(getRandomCruiseFromResult().findElement(By.xpath(CRUISE_DETAILS_BUTTON)));
+        WebElement randomCruise=getRandomCruiseFromResult();
+        TestHelper.waitSeconds(1);
+        clickWithJS(randomCruise.findElement(By.xpath(CRUISE_DETAILS_BUTTON)));
     }
 
 

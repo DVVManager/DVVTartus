@@ -1,5 +1,6 @@
 package ua.com.tartustour.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -53,7 +54,6 @@ public class MainPage extends AbstractPage<MainPage> {
     protected void load() {
         refreshPage();
     }
-
     @Override
     protected void isLoaded() {
         assertTrue(webElementIsEnabled(tartusIcon));
@@ -100,34 +100,128 @@ public class MainPage extends AbstractPage<MainPage> {
         @FindBy(xpath = HISTORY_BUTTON)
         WebElement historyButton;
 
-        @Autowired
         public SearchForm() {
             PageFactory.initElements(driver, this);
         }
 
+        public SearchForm get(){
+            assertTrue(webElementIsEnabled(seaCruiseButton));
+            assertTrue(webElementIsEnabled(riverCruiseButton));
+            assertTrue(webElementIsEnabled(searchButton));
+            assertTrue(webElementIsEnabled(regionField));
+            assertTrue(webElementIsEnabled(startDateField));
+            assertTrue(webElementIsEnabled(nextStartDateField));
+            assertTrue(webElementIsEnabled(detailedSearchBytton));
+            assertTrue(webElementIsEnabled(clearSearchButton));
+            assertTrue(webElementIsEnabled(historyButton));
+            return new SearchForm();
+        }
+
         public SearchResultPage performSearch(){
-            click(searchButton);
+            TestHelper.waitSeconds(1);
+            clickIfVisible(searchButton);
+            TestHelper.waitSeconds(1);
             logger.info("| Proceeding with search and waiting for result page |");
-            return (SearchResultPage) new SearchResultPage(driver).get();
+            return new SearchResultPage(driver).get();
         }
 
         public void setStartDateFieldAsCurrent(){
-            typeText(startDateField, TestHelper.getCurrentDate("dd-MM-yyyy"));
+            logger.info("| Setting start date as current |");
+            clearAndType(startDateField, TestHelper.getCurrentDate("dd-MM-yyyy"));
+            TestHelper.waitSeconds(1);
             startDateField.sendKeys(Keys.ESCAPE);
+
         }
         public void setStartDateFieldCustomed(String dayMonthYear,int increment){
-            typeText(startDateField, TestHelper.getDateInPastOrFuture(dayMonthYear, increment));
+            logger.info("| Setting start date |");
+            clearAndType(startDateField, TestHelper.getDateInPastOrFuture(dayMonthYear, increment));
+            TestHelper.waitSeconds(1);
             startDateField.sendKeys(Keys.ESCAPE);
+
         }
         public void setNextStartDateFieldAsCurrent(){
-            typeText(nextStartDateField, TestHelper.getCurrentDate("dd-MM-yyyy"));
+            logger.info("| Setting next start date as current |");
+            clearAndType(nextStartDateField, TestHelper.getCurrentDate("dd-MM-yyyy"));
+            TestHelper.waitSeconds(1);
             startDateField.sendKeys(Keys.ESCAPE);
+
         }
         public void setNextStartDateFieldCustomed(String dayMonthYear,int increment){
-            typeText(nextStartDateField, TestHelper.getDateInPastOrFuture(dayMonthYear, increment));
+            logger.info("| Setting next start date |");
+            clearAndType(nextStartDateField, TestHelper.getDateInPastOrFuture(dayMonthYear, increment));
+            TestHelper.waitSeconds(1);
             startDateField.sendKeys(Keys.ESCAPE);
+
         }
 
+        public String setRandomAvailableRegion(){
+            logger.info("| Setting random available region |");
+            click(regionField);
+            WebElement region;
+            if(getElementsCount(By.xpath(CRUISE_REGION_LIST))>0){
+                region=getRandomFromWebElements(By.xpath(CRUISE_REGION_LIST));
+                clickIfVisible(region);
+            }else{
+                throw  new RuntimeException("| No available cruise region - seems no cruise as well |");
+            }
+            WebElement subRegion=getRandomFromWebElements(By.xpath(CRUISER_SUB_REGION_LIST));
+            String selectedSubRegion=subRegion.getAttribute("data-value");
+            clickIfVisible(subRegion);
+            click(regionField);
+            return selectedSubRegion;
+        }
 
+        public void setSpecifiedRegion(String region){
+            click(regionField);
+            logger.info("| Setting region " + region + " |");
+            moveToElementAndClick(getElementBy(By.xpath(String.format(CRUISE_REGION_SPECIFIED, region))));
+            //TestHelper.waitSeconds(1);
+
+        }
+        public void setSpecifiedSubRegion(String subRegion) {
+            //moveMouse(317,353);
+            moveToElementAndClick(getElementBy(By.xpath(String.format(CRUISE_SUBREGION_SPECIFIED, subRegion))));
+            TestHelper.waitSeconds(1);
+            click(regionField);
+            logger.info("| Setting sub region " + subRegion + " |");
+        }
+
+        public void clearFilledData(){
+            logger.info("| Clear data in search from |");
+            clickIfVisible(clearSearchButton);
+            TestHelper.waitSeconds(1);
+        }
+
+        public void goToSearchHistory(){
+            TestHelper.waitSeconds(1);
+            clickWithJS(historyButton);
+            logger.info("| Going to search history |");
+            TestHelper.waitSeconds(1);
+        }
+        public void openDetailsSearch(){
+            logger.info("| Opening detailed search section |");
+            clickIfVisible(detailedSearchBytton);
+            TestHelper.waitSeconds(2);
+        }
+        public void hideDetailedSearch(){
+            logger.info("| Hiding detailed search section |");
+            clickIfVisible(getElementBy(By.xpath(HIDE_DETAILED_SEARCH_BUTTON)));
+            TestHelper.waitSeconds(1);
+        }
+        public void chooseSeaCruise(){
+            logger.info("| Choosing SEA Cruise |");
+            clickIfVisible(seaCruiseButton);
+        }
+
+        public void chooseRiverCruise(){
+            logger.info("| Choosing RIVER Cruise |");
+            clickIfVisible(riverCruiseButton);
+        }
+        public SearchForm returnToSearchFromHistory(){
+            TestHelper.waitSeconds(1);
+            clickIfVisible(getElementBy(By.xpath(BACK_TO_SEARCH)));
+            logger.info("| Going back to search from |");
+            return get();
+        }
     }
 }
