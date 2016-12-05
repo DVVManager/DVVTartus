@@ -22,6 +22,26 @@ public class SearchFormConstants {
     public static final String CRUISE_SUBREGION_SPECIFIED=".//ul[@class='inner-drop']//input[@data-type='regionIds' and @data-value='%s']";
     public static final String CRUISE_START_DATE=".//input[@class='text date-text start-date hasDatepicker']";
     public static final String CRUISE_NEXT_START_DATE=".//input[@class='text date-text end-date hasDatepicker']";
+    public static final String CRUISE_PORT=".//input[@class='text city-text']/following-sibling::a";
+    public static final String CRUISE_PORT_LIST=".//ul[@class='reg-list']/li/input[@data-type='regionIds']";
+    public static final String CRUISE_PORT_REGION=".//ul[@class='reg-list']/li/input[@data-type='regionIds' and @data-value='%s']";
+    public static final String CRUISE_PORT_CITIES_LIST=".//ul[@class='inner-drop']/li/input[@data-type='cityIds']";
+    public static final String CRUISE_PORT_CITY=".//input[@data-type='cityIds' and @data-value='%s']";
+
+    public static final String COMPANY_FIELD=".//input[@class='text company-text']/following-sibling::a";
+    public static final String COMPANY_CATEGORY_LIST=".//input[@data-type='companyCategoryId']";///following-sibling::label
+    public static final String COMPANY_CATEGORY=".//input[@data-type='companyCategoryId' and @data-value='%s']";
+    public static final String COMPANY_NAME_LIST=".//ul[@class='inner-drop']/li/input[@data-type='companyId']/following-sibling::label";
+    public static final String COMPANY_NAME=".//ul[@class='inner-drop']/li/input[@data-type='companyId' and @data-value='%s']";
+
+    public static final String CURRENCY_DROPDOWN="currencyId";//id locator
+    public static final String PRICE_SLIDE=".//input[@id='fader' and @name='price']";
+    public static final String PRICE_SLIDE_BAR="fader";//id locator
+    public static final String RUSSIAN_GROUP=".//input[@name='ruGroup']/following-sibling::label";
+    public static final String SALES_ONLY=".//input[@name='sale']/following-sibling::label";
+    public static final String CHILDREN_FREE=".//input[@name='children']/following-sibling::label";
+    public static final String EMPTY_RESULT=".//section[@class='content']";
+
 
 
 

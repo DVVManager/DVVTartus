@@ -3,27 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d5c7265a-7be5-4fc7-b760-66de3870f5db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/AbstractPage.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/AbstractPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/LoginPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/MainPage.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/MainPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ua/com/tartustour/testclasses/MainTestClass.class" afterPath="$PROJECT_DIR$/target/test-classes/ua/com/tartustour/testclasses/MainTestClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/ProfilePage.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/ProfilePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/RegistrationPage.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/RegistrationPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/RestorePage.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/RestorePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/locators/RestorePassPageConstants.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/pages/locators/RestorePassPageConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ua/com/tartustour/utils/TestHelper.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/tartustour/utils/TestHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" afterPath="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/ProfilePage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/ProfilePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RegistrationPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RegistrationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RestorePage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RestorePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/RestorePassPageConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/RestorePassPageConstants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/utils/TestHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/utils/TestHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/framemanagers/TestManager.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/framemanagers/TestManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,25 +33,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainTestClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java">
+      <file leaf-file-name="AbstractPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.027960526">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+              <folding>
+                <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
+                <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchFormConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java">
+      <file leaf-file-name="MainTestClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15026833">
-              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding>
-                <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
-                <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/managers/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/managers/TestManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/MainPageConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/LoginPageConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/usermanager/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/usermanager/Tourist.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/usermanager/Agency.java" />
@@ -121,12 +129,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RestorePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/utils/TestHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/RestorePassPageConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/LoginPageConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" />
       </list>
     </option>
   </component>
@@ -197,9 +206,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,8 +215,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tartustour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tartustour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +240,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GuruBankSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="129" />
@@ -539,7 +558,13 @@
       <option name="project" value="LOCAL" />
       <updated>1480545655386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- encode in UTF-8;&#10;- new methods for SearchForm.class;">
+      <created>1480714508225</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1480714508225</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -557,12 +582,12 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4923339" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2912254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2898975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51959115" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5188679" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -583,17 +608,17 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62521297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4923339" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29173046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.290469" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39404553" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5188679" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -610,28 +635,107 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- test commit;" />
     <MESSAGE value="- enhanced with locators and inner classes by page logic;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- enhanced with locators and inner classes by page logic;" />
+    <MESSAGE value="- encode in UTF-8;&#10;- new methods for SearchForm.class;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- encode in UTF-8;&#10;- new methods for SearchForm.class;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>41</line>
+          <line>27</line>
           <properties />
-          <option name="timeStamp" value="80" />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
-          <line>124</line>
+          <line>321</line>
           <properties />
-          <option name="timeStamp" value="81" />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
+          <line>325</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
+          <line>324</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="82" />
+      <option name="time" value="127" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -647,8 +751,6 @@
           <folding>
             <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
             <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
-            <element signature="e#3159#3160#0" expanded="true" />
-            <element signature="e#3221#3222#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,17 +768,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#executeJSCommand#0;class#AbstractPage#0" expanded="false" />
             <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#selectDropDownElementByValue#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#selectDropDownElementByIndex#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#deselectAllValuesInDropDown#0;class#AbstractPage#0" expanded="false" />
             <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
             <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#isDropDownMultiple#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#deselectDropDownOptionByText#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#takeScreenShot#0;class#AbstractPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -688,8 +782,6 @@
           <folding>
             <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
             <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
-            <element signature="e#3159#3160#0" expanded="true" />
-            <element signature="e#3221#3222#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -839,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33273703">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,19 +945,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/framemanagers/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030411448">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/framemanagers/WebDriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51699466">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,10 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6386404">
           <caret line="28" column="57" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="57" />
-          <folding>
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,12 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78711987">
           <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
-          <folding>
-            <element signature="e#598#599#0" expanded="false" />
-            <element signature="e#631#632#0" expanded="false" />
-            <element signature="e#1133#1134#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,7 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24329159">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.44">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3580645">
           <caret line="496" column="0" selection-start-line="496" selection-start-column="0" selection-end-line="496" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.72">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,9 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.72">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding>
-            <element signature="e#5420#5421#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53038675">
           <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34517765">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,30 +1033,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/testng/testng/6.8.8/testng-6.8.8.jar!/org/testng/internal/MethodInvocationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36681223">
-          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18067978">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21288015">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15205725">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1824687">
           <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,34 +1076,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15205725">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/framemanagers/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/LoginPageConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1824687">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/testng/testng/6.8.8/testng-6.8.8.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36681223">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33273703">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#executeJSCommand#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#selectDropDownElementByValue#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#selectDropDownElementByIndex#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#deselectAllValuesInDropDown#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#isDropDownMultiple#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#deselectDropDownOptionByText#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#takeScreenShot#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
+            <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,18 +1123,19 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15026833">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.027960526">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
-            <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
+            <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
           </folding>
         </state>
       </provider>

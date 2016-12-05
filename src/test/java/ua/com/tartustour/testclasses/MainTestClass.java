@@ -24,22 +24,32 @@ public class MainTestClass extends TestManager {
     public void goToCruiseDetails() {
         mainPage = navigateMainPage();
         searchForm=mainPage.new SearchForm();
-        /*String yes=searchForm.setRandomAvailableRegion();
-        System.out.println("Chosen region/subregion: "+yes);
-        resultPage=searchForm.performSearch();
-        resultPage.goToRandomCruiseDetails();*/
-        //searchForm.chooseRiverCruise();
-        searchForm.setSpecifiedRegion("Европа");
+
+
+        /*searchForm.setSpecifiedRegion("Европа");
         searchForm.setSpecifiedSubRegion("Европа");
         searchForm.setStartDateFieldAsCurrent();
-        searchForm.setNextStartDateFieldCustomed("day",15);
+        searchForm.setNextStartDateFieldCustomed("day", 15);
         searchForm.openDetailsSearch();
         searchForm.hideDetailedSearch();
         searchForm.clearFilledData();
         searchForm.chooseSeaCruise();
         searchForm.goToSearchHistory();
-        searchForm.returnToSearchFromHistory();
+        searchForm.returnToSearchFromHistory();*/
         searchForm.performSearch();
+        searchForm.openDetailsSearch();
+        /*searchForm.chooseRiverCruise();
+        searchForm.setSecifiedPortRegion("Европа");
+        searchForm.setSpecifiedCity("Страсбург");*/
+        searchForm.chooseWithFreeForChildren();
+        searchForm.chooseWithRussianGroup();
+        searchForm.chooseWithSales();
+        searchForm.setRandomAvailableCompany();
+        searchForm.setCurrency("RUB");
+        searchForm.setPrice(10);
+        searchForm.performSearchWithEmptyResult();
+
+
         TestHelper.waitSeconds(4);
     }
 

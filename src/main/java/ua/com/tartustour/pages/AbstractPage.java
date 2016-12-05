@@ -224,6 +224,16 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
             e.printStackTrace();
         }
     }
+    protected void moveSlideBar(WebElement slideBar,int value){
+
+        Actions move = new Actions(driver);
+        move.dragAndDropBy(slideBar, value, 0).build().perform();
+    }
+
+    protected void moveToSlideBarValue(WebElement slideBar,int value){
+        Actions move = new Actions(driver);
+        move.moveToElement(slideBar,value,0).click().build().perform();
+    }
 
 
     @Override
