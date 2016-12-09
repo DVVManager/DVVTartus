@@ -26,7 +26,7 @@ public class MainTestClass extends TestManager {
         searchForm=mainPage.new SearchForm();
 
 
-        /*searchForm.setSpecifiedRegion("Европа");
+     /*   searchForm.setSpecifiedRegion("Европа");
         searchForm.setSpecifiedSubRegion("Европа");
         searchForm.setStartDateFieldAsCurrent();
         searchForm.setNextStartDateFieldCustomed("day", 15);
@@ -35,20 +35,30 @@ public class MainTestClass extends TestManager {
         searchForm.clearFilledData();
         searchForm.chooseSeaCruise();
         searchForm.goToSearchHistory();
-        searchForm.returnToSearchFromHistory();*/
+        searchForm.returnToSearchFromHistory();
         searchForm.performSearch();
         searchForm.openDetailsSearch();
-        /*searchForm.chooseRiverCruise();
+        searchForm.chooseRiverCruise();
         searchForm.setSecifiedPortRegion("Европа");
-        searchForm.setSpecifiedCity("Страсбург");*/
+        searchForm.setSpecifiedCity("Страсбург");
         searchForm.chooseWithFreeForChildren();
         searchForm.chooseWithRussianGroup();
         searchForm.chooseWithSales();
         searchForm.setRandomAvailableCompany();
         searchForm.setCurrency("RUB");
         searchForm.setPrice(10);
-        searchForm.performSearchWithEmptyResult();
-
+        searchForm.performSearchWithEmptyResult();*/
+        resultPage=searchForm.performSearch();
+        //resultPage.getFoundCruisCards().forEach(s-> System.out.println(s.toString()));
+        //resultPage.moveToResultPage(2);
+        //resultPage.moveToResultPageWithArrow(1);
+        /*resultPage.sortByPriceDesc();
+        resultPage.sortByDateAsc();
+        resultPage.sortByPriceAsc();
+        resultPage.sortByDateDesc();*/
+        resultPage.addToCompareCruiseWithId("518215");
+        System.out.println(resultPage.getCruisesInComparisonCount());
+        resultPage.goToComparePage();
 
         TestHelper.waitSeconds(4);
     }

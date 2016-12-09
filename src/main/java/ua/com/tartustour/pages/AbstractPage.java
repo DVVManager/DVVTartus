@@ -94,10 +94,22 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
         Actions acts=new Actions(driver);
         acts.moveToElement(element).click().build().perform();
     }
+    protected void moveToLocationAndClick(WebElement element){
+        int x=element.getLocation().getX();
+        int y=element.getLocation().getY();
+        Actions acts=new Actions(driver);
+        acts.moveByOffset(x, y).contextClick().build().perform();
+
+    }
 
     protected void moveMouse(int horizont,int vertical){
         Actions acts=new Actions(driver);
         acts.moveByOffset(horizont, vertical).build().perform();
+    }
+
+    protected void clickOnPlace(){
+        Actions acts=new Actions(driver);
+        acts.click().build().perform();
     }
 
     protected void navigatePageBack() {
@@ -207,6 +219,10 @@ public abstract class AbstractPage<T extends AbstractPage<T>> extends LoadableCo
         List<WebElement> elements=driver.findElements(locator);
         int size=elements.size();
         return size;
+    }
+
+    protected  WebElement getElementByAppend(WebElement element,By locator){
+        return element.findElement(locator);
     }
 
     protected WebElement getRandomFromWebElements(By locator){

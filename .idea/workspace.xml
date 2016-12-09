@@ -9,7 +9,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" afterPath="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tartustour.iml" afterPath="$PROJECT_DIR$/tartustour.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tartustour.iws" />
@@ -33,48 +36,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AbstractPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbstractPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.027960526">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="233" column="36" selection-start-line="233" selection-start-column="36" selection-end-line="233" selection-end-column="36" />
               <folding>
+                <element signature="method#navigateUrl#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#clearAndType#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#clickIfVisible#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#clickWithJS#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#waitElementToBeClickable#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#moveToElementAndClick#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#moveToLocationAndClick#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#moveMouse#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#clickOnPlace#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#submit#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#cancelAlertPopUp#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#acceptAlertPopUp#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#executeJSCommand#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#executeJSCommand#1;class#AbstractPage#0" expanded="false" />
                 <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#selectDropDownElementByValue#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#selectDropDownElementByIndex#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#deselectAllValuesInDropDown#0;class#AbstractPage#0" expanded="false" />
                 <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
                 <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#isDropDownMultiple#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#deselectDropDownOptionByText#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#getElementsCount#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#getRandomFromWebElements#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#takeScreenShot#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#moveSlideBar#0;class#AbstractPage#0" expanded="false" />
+                <element signature="method#moveToSlideBarValue#0;class#AbstractPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java">
+      <file leaf-file-name="SearchResultPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+              <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
               <folding>
-                <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
-                <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+                <element signature="e#1422#1423#0" expanded="true" />
+                <element signature="e#1467#1468#0" expanded="true" />
+                <element signature="method#sortByPriceAsc#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="method#sortByPriceDesc#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="method#addToCompareCruiseWithName#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="method#addToCompareCruiseWithId#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="e#3626#3627#0" expanded="true" />
+                <element signature="e#3711#3712#0" expanded="true" />
+                <element signature="method#moveToResultPageWithArrow#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="e#4781#4782#0" expanded="true" />
+                <element signature="e#4849#4850#0" expanded="true" />
+                <element signature="e#4884#4885#0" expanded="true" />
+                <element signature="e#4952#4953#0" expanded="true" />
+                <element signature="method#goToCruiseDetailsByName#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="method#getFoundCruisCards#0;class#SearchResultPage#0" expanded="false" />
+                <element signature="e#7630#7631#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchFormConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java">
+      <file leaf-file-name="SearchResultPageConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTestClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainTestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.15104167">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -127,15 +174,15 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/RestorePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/utils/TestHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/RestorePassPageConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/LoginPageConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java" />
       </list>
     </option>
   </component>
@@ -206,7 +253,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,27 +264,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tartustour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tartustour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
@@ -564,7 +601,13 @@
       <option name="project" value="LOCAL" />
       <updated>1480714508225</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- new methods for SearchForm.class ,remains only ship field;">
+      <created>1480973350495</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1480973350495</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -573,27 +616,27 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4923339" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32789558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49102774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2898975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29954615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5188679" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5187602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -636,106 +679,35 @@
     <MESSAGE value="- test commit;" />
     <MESSAGE value="- enhanced with locators and inner classes by page logic;" />
     <MESSAGE value="- encode in UTF-8;&#10;- new methods for SearchForm.class;" />
-    <option name="LAST_COMMIT_MESSAGE" value="- encode in UTF-8;&#10;- new methods for SearchForm.class;" />
+    <MESSAGE value="- new methods for SearchForm.class ,remains only ship field;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- new methods for SearchForm.class ,remains only ship field;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>27</line>
+          <line>62</line>
           <properties />
-          <option name="timeStamp" value="97" />
+          <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java</url>
+          <line>210</line>
           <properties />
-          <option name="timeStamp" value="98" />
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java</url>
+          <line>214</line>
           <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
-          <line>321</line>
-          <properties />
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
-          <line>325</line>
-          <properties />
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
-          <line>324</line>
-          <properties />
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java</url>
-          <line>135</line>
-          <properties />
-          <option name="timeStamp" value="125" />
+          <option name="timeStamp" value="164" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="127" />
+      <option name="time" value="165" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -751,6 +723,25 @@
           <folding>
             <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
             <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
+            <element signature="method#performSearchWithEmptyResult#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setStartDateFieldAsCurrent#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setStartDateFieldCustomed#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setNextStartDateFieldAsCurrent#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setNextStartDateFieldCustomed#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setRandomAvailableRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedSubRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#clearFilledData#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#goToSearchHistory#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#openDetailsSearch#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#hideDetailedSearch#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseSeaCruise#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseRiverCruise#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#returnToSearchFromHistory#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setRandomAvailablePort#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSecifiedPortRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedCity#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseRandomCurrency#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -768,9 +759,33 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
           <folding>
+            <element signature="method#navigateUrl#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clearAndType#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clickIfVisible#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clickWithJS#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#waitElementToBeClickable#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveToElementAndClick#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveToLocationAndClick#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveMouse#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clickOnPlace#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#submit#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#cancelAlertPopUp#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#acceptAlertPopUp#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#executeJSCommand#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#executeJSCommand#1;class#AbstractPage#0" expanded="false" />
             <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#selectDropDownElementByValue#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#selectDropDownElementByIndex#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#deselectAllValuesInDropDown#0;class#AbstractPage#0" expanded="false" />
             <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
             <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#isDropDownMultiple#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#deselectDropDownOptionByText#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getElementsCount#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getRandomFromWebElements#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#takeScreenShot#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveSlideBar#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveToSlideBarValue#0;class#AbstractPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -782,6 +797,25 @@
           <folding>
             <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
             <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
+            <element signature="method#performSearchWithEmptyResult#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setStartDateFieldAsCurrent#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setStartDateFieldCustomed#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setNextStartDateFieldAsCurrent#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setNextStartDateFieldCustomed#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setRandomAvailableRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedSubRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#clearFilledData#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#goToSearchHistory#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#openDetailsSearch#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#hideDetailedSearch#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseSeaCruise#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseRiverCruise#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#returnToSearchFromHistory#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setRandomAvailablePort#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSecifiedPortRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedCity#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseRandomCurrency#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -790,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,10 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7889088">
           <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-          <folding>
-            <element signature="method#beforeTestMethod#0;class#TestManager#0" expanded="false" />
-            <element signature="method#afterTestMethod#0;class#TestManager#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,13 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/seleniumhq/selenium/selenium-api/2.45.0/selenium-api-2.45.0.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.72">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/seleniumhq/selenium/selenium-remote-driver/2.45.0/selenium-remote-driver-2.45.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.72">
@@ -1027,27 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42913386">
           <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="method#login#0;class#LoginPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#745#746#0" expanded="false" />
-            <element signature="e#778#779#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21288015">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1083,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,49 +1094,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/testng/testng/6.8.8/testng-6.8.8.jar!/org/testng/internal/MethodInvocationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36681223">
-          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchFormConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
-          <folding />
+        <state vertical-scroll-proportion="-12.931034">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33246753">
+          <caret line="328" column="12" selection-start-line="328" selection-start-column="12" selection-end-line="328" selection-end-column="12" />
           <folding>
             <element signature="method#navigateMainPage#0;class#MainPage#0" expanded="false" />
             <element signature="method#goToLoginPage#0;class#MainPage#0" expanded="false" />
+            <element signature="method#performSearchWithEmptyResult#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setStartDateFieldAsCurrent#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setStartDateFieldCustomed#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setNextStartDateFieldAsCurrent#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setNextStartDateFieldCustomed#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setRandomAvailableRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedSubRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#clearFilledData#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#goToSearchHistory#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#openDetailsSearch#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#hideDetailedSearch#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseSeaCruise#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseRiverCruise#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#returnToSearchFromHistory#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setRandomAvailablePort#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSecifiedPortRegion#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#setSpecifiedCity#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+            <element signature="method#chooseRandomCurrency#0;class#SearchForm#0;class#MainPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/testng/testng/6.8.8/testng-6.8.8.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40495867">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../KCentre/Maven/apache-maven-3.3.1/repo/org/seleniumhq/selenium/selenium-api/2.45.0/selenium-api-2.45.0.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3677686">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="233" column="36" selection-start-line="233" selection-start-column="36" selection-end-line="233" selection-end-column="36" />
+          <folding>
+            <element signature="method#navigateUrl#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clearAndType#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clickIfVisible#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clickWithJS#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#waitElementToBeClickable#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveToElementAndClick#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveToLocationAndClick#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveMouse#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#clickOnPlace#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#submit#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#cancelAlertPopUp#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#acceptAlertPopUp#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#executeJSCommand#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#executeJSCommand#1;class#AbstractPage#0" expanded="false" />
+            <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#selectDropDownElementByValue#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#selectDropDownElementByIndex#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#deselectAllValuesInDropDown#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#isDropDownMultiple#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#deselectDropDownOptionByText#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getElementsCount#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#getRandomFromWebElements#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#takeScreenShot#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveSlideBar#0;class#AbstractPage#0" expanded="false" />
+            <element signature="method#moveToSlideBarValue#0;class#AbstractPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/locators/SearchResultPageConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/SearchResultPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding>
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="method#sortByPriceAsc#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="method#sortByPriceDesc#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="method#addToCompareCruiseWithName#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="method#addToCompareCruiseWithId#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="e#3626#3627#0" expanded="true" />
+            <element signature="e#3711#3712#0" expanded="true" />
+            <element signature="method#moveToResultPageWithArrow#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="e#4781#4782#0" expanded="true" />
+            <element signature="e#4849#4850#0" expanded="true" />
+            <element signature="e#4884#4885#0" expanded="true" />
+            <element signature="e#4952#4953#0" expanded="true" />
+            <element signature="method#goToCruiseDetailsByName#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="method#getFoundCruisCards#0;class#SearchResultPage#0" expanded="false" />
+            <element signature="e#7630#7631#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/tartustour/testclasses/MainTestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15104167">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/tartustour/pages/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027960526">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="method#selectDropDownElementByText#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#getDropDownSelectedOptions#0;class#AbstractPage#0" expanded="false" />
-            <element signature="method#getAllDropDownOptions#0;class#AbstractPage#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,6 +1305,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

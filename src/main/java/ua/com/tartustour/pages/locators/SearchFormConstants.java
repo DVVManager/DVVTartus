@@ -27,6 +27,7 @@ public class SearchFormConstants {
     public static final String CRUISE_PORT_REGION=".//ul[@class='reg-list']/li/input[@data-type='regionIds' and @data-value='%s']";
     public static final String CRUISE_PORT_CITIES_LIST=".//ul[@class='inner-drop']/li/input[@data-type='cityIds']";
     public static final String CRUISE_PORT_CITY=".//input[@data-type='cityIds' and @data-value='%s']";
+    public static final String RIVER_FIELD="riverId";//id locator
 
     public static final String COMPANY_FIELD=".//input[@class='text company-text']/following-sibling::a";
     public static final String COMPANY_CATEGORY_LIST=".//input[@data-type='companyCategoryId']";///following-sibling::label
@@ -40,7 +41,7 @@ public class SearchFormConstants {
     public static final String RUSSIAN_GROUP=".//input[@name='ruGroup']/following-sibling::label";
     public static final String SALES_ONLY=".//input[@name='sale']/following-sibling::label";
     public static final String CHILDREN_FREE=".//input[@name='children']/following-sibling::label";
-    public static final String EMPTY_RESULT=".//section[@class='content']";
+
 
 
 

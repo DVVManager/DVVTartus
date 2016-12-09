@@ -16,6 +16,7 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static ua.com.tartustour.pages.locators.SearchResultPageConstants.*;
 import static ua.com.tartustour.pages.locators.MainPageConstants.*;
 import static ua.com.tartustour.pages.locators.SearchFormConstants.*;
 
@@ -58,6 +59,7 @@ public class MainPage extends AbstractPage<MainPage> {
     protected void load() {
         refreshPage();
     }
+
     @Override
     protected void isLoaded() {
         assertTrue(webElementIsEnabled(tartusIcon));
@@ -129,10 +131,10 @@ public class MainPage extends AbstractPage<MainPage> {
             return new SearchResultPage(driver).get();
         }
 
-        public void performSearchWithEmptyResult(){
+        public void performSearchWithEmptyResult() {
             TestHelper.waitSeconds(1);
             clickIfVisible(searchButton);
-            String emptyResultMessage=getElementBy(By.xpath(EMPTY_RESULT)).getText();
+            String emptyResultMessage = getElementBy(By.xpath(EMPTY_RESULT)).getText();
             assertEquals(emptyResultMessage.trim(), "Нет круизов удовлетворяющих Вашему запросу");
         }
 
@@ -279,35 +281,37 @@ public class MainPage extends AbstractPage<MainPage> {
             logger.info("| Setting sub region " + city + " |");
         }
 
-        public void chooseRandomCurrency(){
-            List<WebElement> currencies=getAllDropDownOptions(getElementBy(By.id(CURRENCY_DROPDOWN)));
+        public void chooseRandomCurrency() {
+            List<WebElement> currencies = getAllDropDownOptions(getElementBy(By.id(CURRENCY_DROPDOWN)));
             Collections.shuffle(currencies);
             currencies.get(0).click();
         }
-        public void setCurrency(String currencyCode){
+
+        public void setCurrency(String currencyCode) {
             selectDropDownElementByText(getElementBy(By.id(CURRENCY_DROPDOWN)), currencyCode);
         }
-        public void setPrice(int value){
 
-            WebElement slideBar=getElementBy(By.id(PRICE_SLIDE_BAR));
-            executeJSCommand("arguments[0].setAttribute('value', '"+value+"')",slideBar);
+        public void setPrice(int value) {
+
+            WebElement slideBar = getElementBy(By.id(PRICE_SLIDE_BAR));
+            executeJSCommand("arguments[0].setAttribute('value', '" + value + "')", slideBar);
             executeJSCommand("document.getElementById('" + PRICE_SLIDE_BAR + "').onchange()");
             /*executeJSCommand("window.outputUpdate("+value+");");*/
         }
 
-        public void chooseWithRussianGroup(){
+        public void chooseWithRussianGroup() {
             getElementBy(By.xpath(RUSSIAN_GROUP)).click();
         }
 
-        public void chooseWithSales(){
+        public void chooseWithSales() {
             getElementBy(By.xpath(SALES_ONLY)).click();
         }
 
-        public void chooseWithFreeForChildren(){
+        public void chooseWithFreeForChildren() {
             getElementBy(By.xpath(CHILDREN_FREE)).click();
         }
 
-        public void setRandomAvailableCompany(){
+        public void setRandomAvailableCompany() {
             logger.info("| Setting random available company |");
             click(getElementBy(By.xpath(COMPANY_FIELD)));
             WebElement coCategory;
@@ -320,12 +324,24 @@ public class MainPage extends AbstractPage<MainPage> {
             }
             click(getElementBy(By.xpath(COMPANY_FIELD)));
             WebElement company = getRandomFromWebElements(By.xpath(COMPANY_NAME_LIST));
-            int x=company.getLocation().getX();
-            int y=company.getLocation().getY();
-            moveMouse(x,y);
+            int x = company.getLocation().getX();
+            int y = company.getLocation().getY();
+            moveMouse(x, y);
             clickIfVisible(company);
             TestHelper.waitSeconds(1);
 
         }
+
+        public void setRiverByText(String riverName){
+            selectDropDownElementByText(getElementBy(By.id(RIVER_FIELD)), riverName);
+        }
+
+        public void setRandomRiver(){
+            List<WebElement> rivers=getAllDropDownOptions(getElementBy(By.id(RIVER_FIELD)));
+            Collections.shuffle(rivers);
+            rivers.get(0).click();
+        }
     }
+
 }
+
