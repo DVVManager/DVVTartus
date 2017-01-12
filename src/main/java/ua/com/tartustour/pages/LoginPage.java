@@ -47,16 +47,20 @@ public class LoginPage extends AbstractPage<LoginPage>{
     }
 
     public void enterEmail(String email){
+        logger.info("| Setting email"+email+ " |");
         clearAndType(emailField, email);
     }
     public void enterPass(String pass){
+        logger.info("| Setting password "+pass+ " |");
         clearAndType(passField, pass);
     }
 
     public void clickLogin(){
+        logger.info("| Trying to login |");
         click(loginButton);
     }
     public void checkSaveCredentials(){
+        logger.info("| Mark remember credentials checkbox |");
         click(remembePassCheckBox);
     }
     public boolean isCredentialsSaveBoxChecked(){

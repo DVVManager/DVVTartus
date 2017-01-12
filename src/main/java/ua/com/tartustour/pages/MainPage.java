@@ -135,6 +135,7 @@ public class MainPage extends AbstractPage<MainPage> {
             TestHelper.waitSeconds(1);
             clickIfVisible(searchButton);
             String emptyResultMessage = getElementBy(By.xpath(EMPTY_RESULT)).getText();
+            logger.info("| Proceeding with search and waiting for empty result page |");
             assertEquals(emptyResultMessage.trim(), "Нет круизов удовлетворяющих Вашему запросу");
         }
 
@@ -292,7 +293,7 @@ public class MainPage extends AbstractPage<MainPage> {
         }
 
         public void setPrice(int value) {
-
+            logger.info("| Setting price to value: "+value+" |");
             WebElement slideBar = getElementBy(By.id(PRICE_SLIDE_BAR));
             executeJSCommand("arguments[0].setAttribute('value', '" + value + "')", slideBar);
             executeJSCommand("document.getElementById('" + PRICE_SLIDE_BAR + "').onchange()");
@@ -300,14 +301,17 @@ public class MainPage extends AbstractPage<MainPage> {
         }
 
         public void chooseWithRussianGroup() {
+            logger.info("| Choosing russian groups checkbox |");
             getElementBy(By.xpath(RUSSIAN_GROUP)).click();
         }
 
         public void chooseWithSales() {
+            logger.info("| Choosing Sales checkbox |");
             getElementBy(By.xpath(SALES_ONLY)).click();
         }
 
         public void chooseWithFreeForChildren() {
+            logger.info("| Choosing free for children  checkbox |");
             getElementBy(By.xpath(CHILDREN_FREE)).click();
         }
 
@@ -333,10 +337,12 @@ public class MainPage extends AbstractPage<MainPage> {
         }
 
         public void setRiverByText(String riverName){
+            logger.info("| Choosing river with name "+riverName+" |");
             selectDropDownElementByText(getElementBy(By.id(RIVER_FIELD)), riverName);
         }
 
         public void setRandomRiver(){
+            logger.info("| Choosing random river |");
             List<WebElement> rivers=getAllDropDownOptions(getElementBy(By.id(RIVER_FIELD)));
             Collections.shuffle(rivers);
             rivers.get(0).click();

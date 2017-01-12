@@ -18,6 +18,7 @@ public class SearchResultPageConstants {
     public static final String CRUISE_APPEND_DURATION=".//ul[@class='short-info']/li[@class='term']//span[@class='nights-number']";
     public static final String CRUISE_APPEND_PRICE=".//ul[@class='short-info']/li[@class='price-wrap']/span[contains(@class,'price')]";
     public static final String CRUISE_APPEND_ID=".//ul[@class='short-info']/following-sibling::span[@class='article']";
+    public static final String CRUISE_APPEND_PORT=".//li[@class='from-place']/div/span[@class='city']";
 
     public static final String PAGES_COUNT=".//div[@class='paging']/ul/li[last()-1]/a";
     public static final String RESULT_TABLE_PAGE=".//div[@id='tab-table']/following-sibling::div//div[@class='paging']/ul/li[position()=%d]/a";

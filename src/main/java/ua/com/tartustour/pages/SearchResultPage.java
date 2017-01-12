@@ -53,28 +53,34 @@ public class SearchResultPage extends MainPage {
     }
     //TODO: return mapView page
     public void clickMapView(){
+        logger.info("| Choosing View type as MAP |");
         clickIfVisible(resultViewMap);
     }
     public void clickTableView(){
+        logger.info("| Choosing View type as TABLE |");
         clickIfVisible(resultViewTable);
     }
 
     public void sortByDateAsc(){
+        logger.info("| Doing sort by date asc|");
         selectDropDownElementByValue(sortItemsList, "1");
         TestHelper.waitSeconds(1);
     }
 
     public void sortByDateDesc(){
+        logger.info("| Doing sort by date desc |");
         selectDropDownElementByValue(sortItemsList, "2");
         TestHelper.waitSeconds(1);
     }
 
     public void sortByPriceAsc(){
+        logger.info("| Doing sort by price asc |");
         selectDropDownElementByValue(sortItemsList,"3");
         TestHelper.waitSeconds(1);
     }
 
     public void sortByPriceDesc(){
+        logger.info("| Doing sort by price desc |");
         selectDropDownElementByValue(sortItemsList,"4");
         TestHelper.waitSeconds(1);
     }
@@ -82,6 +88,7 @@ public class SearchResultPage extends MainPage {
     public List<String> addToCompareCruiseWithName(String name){
         refreshPage();
         TestHelper.waitSeconds(1);
+        logger.info("| Adding cruise: " + name + " to comparison |");
         WebElement cruise=getElementBy(By.xpath(String.format(CRUISE_NAME,name)));
         WebElement compare=getElementByAppend(cruise,By.xpath(COMPARE_BY_NAME));
         clickWithJS(compare);
@@ -89,7 +96,7 @@ public class SearchResultPage extends MainPage {
         refreshPage();
         cruise=getElementBy(By.xpath(String.format(CRUISE_NAME, name)));
         WebElement inComparison=getElementByAppend(cruise, By.xpath(IN_COMPARISON_BY_NAME));
-        assertEquals("В сравнении",inComparison.getText());
+        assertEquals("В сравнении", inComparison.getText());
         cruisesInComparison.add(name);
         return cruisesInComparison;
     }
@@ -97,6 +104,7 @@ public class SearchResultPage extends MainPage {
     public List<String> addToCompareCruiseWithId(String id){
         refreshPage();
         TestHelper.waitSeconds(1);
+        logger.info("| Adding cruise: " + id + " to comparison |");
         WebElement cruise=getElementBy(By.xpath(String.format(CRUISE_ID,id)));
         WebElement compareButton=getElementByAppend(cruise,By.xpath(COMPARE_BY_ID));
         clickWithJS(compareButton);
@@ -110,6 +118,7 @@ public class SearchResultPage extends MainPage {
     }
 
     public int getPageResultsCount(int page){
+        logger.info("| Counting results on page nume "+page+" |");
         moveToResultPage(page);
         return getElementsCount(By.xpath(RESULT_TABLE_RESULTS));
     }
@@ -119,6 +128,7 @@ public class SearchResultPage extends MainPage {
     }
 
     public void moveToResultPage(int pageNum){
+        logger.info("| Moving to page num: "+pageNum+" of Result Table |");
         int pagesCount=getPagesCount();
         if(pageNum>pagesCount){
             throw new RuntimeException("No such page at Result's table.");
@@ -133,6 +143,7 @@ public class SearchResultPage extends MainPage {
     }
 
     public void moveToResultPageWithArrow(int pageNum){
+        logger.info("| Moving to page: "+pageNum+" of Result Page |");
         int pagesCount=getPagesCount();
         if(pageNum>pagesCount){
             throw new RuntimeException("No such page at Result's table.");
@@ -157,26 +168,31 @@ public class SearchResultPage extends MainPage {
     }
 
     public WebElement getRandomCruiseFromResult(){
+        logger.info("| Getting random cruise from result list |");
         if(getPageResultsCount(1)>0){
             return getRandomFromWebElements(By.xpath(RESULT_TABLE_RESULTS));
         }else{
             throw new RuntimeException("Missing any cruise in result table");
         }
     }
-    //TODO:return detailsPage
-    public void goToRandomCruiseDetails(){
+
+    public CruiseDetailsPage goToRandomCruiseDetails(){
         WebElement randomCruise=getRandomCruiseFromResult();
         TestHelper.waitSeconds(1);
         clickWithJS(randomCruise.findElement(By.xpath(CRUISE_DETAILS_BUTTON)));
+        return new CruiseDetailsPage(driver).get();
     }
-    //TODO:retrun detailsPage
-    public void goToCruiseDetailsByName(String cruiseName){
-        WebElement cruiseTitlename=getElementBy(By.xpath(String.format(CRUISE_NAME,cruiseName)));
+
+    public CruiseDetailsPage goToCruiseDetailsByName(String cruiseName){
+        logger.info("| Goint to cruise details by cruise name: " + cruiseName + " |");
+        WebElement cruiseTitlename=getElementBy(By.xpath(String.format(CRUISE_NAME, cruiseName)));
         cruiseTitlename.click();
+        return new CruiseDetailsPage(driver).get();
     }
 
     public List<CruiseCard> getFoundCruisCards(){
          cruiseCards=new ArrayList();
+        logger.info("Collecting all found cruises from result table");
         List<WebElement> cruisesFound=getElementsBy(By.xpath(RESULT_TABLE_RESULTS));
         for(WebElement el:cruisesFound){
             CruiseCard card=new CruiseCard();
@@ -206,14 +222,16 @@ public class SearchResultPage extends MainPage {
         }*/
         return cruiseCards;
     }
-    //TODO:retrun comparison page
-    public void goToComparePage(){
+
+    public ComparePage goToComparePage(){
+        logger.info("Going to Comparison page");
         clickIfVisible(getElementBy(By.xpath(CRUISES_IN_COMPARISON_ICON)));
+        return new ComparePage(driver).get();
     }
 
-    public String getCruisesInComparisonCount(){
+    public int getCruisesInComparisonCount(){
         WebElement compareIcon=getElementBy(By.xpath(CRUISES_IN_COMPARISON_ICON));
-        return compareIcon.getText();
+        return Integer.valueOf(compareIcon.getText());
     }
 
 
